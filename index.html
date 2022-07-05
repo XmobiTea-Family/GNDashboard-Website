@@ -143,6 +143,8 @@
       
       window.auth = getAuth();
       window.googleProvider = new GoogleAuthProvider();
+      window.googleProvider.addScope('https://www.googleapis.com/auth/userinfo.email');
+
       window.facebookProvider = new FacebookAuthProvider();
       window.appleProvider = new OAuthProvider("apple.com");
       window.githubProvider = new GithubAuthProvider();
